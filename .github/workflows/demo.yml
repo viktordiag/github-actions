@@ -17,8 +17,17 @@ jobs:
       - name: Print to console
         # пишем команду в консоль, в нашем случае на платформе ubuntu
         run: echo Hello GH Actions!
+        # создаём ещё один шаг
+      - name: Print a new lines
+        # для того чтобы вывести несколько команд ставим знак " | "
+        run: |
+          echo First line
+          echo Second line
+        
  # я создал рабочий процесс с именем 'Demo Workflow', поставил указание запускать его вручную, задал работу которая запускает север с ubuntu и выполняет один шаг
- # с названием 'Print to console', который выводит в консоль надпись 'Hello GH Actions'       
+ # с названием 'Print to console', который выводит в консоль надпись 'Hello GH Actions'   
+ # создаю ещё один шаг с именем 'Print a new line" который выводит в консоль строки 'First line' and 'Second line'. 
+ # для того чтобы прописать несколько команд ставлю знак " | "
         
       
   
